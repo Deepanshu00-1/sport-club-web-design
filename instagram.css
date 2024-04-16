@@ -1,0 +1,455 @@
+/* @font-face{
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: DancingScript-VariableFont_wght;
+} */
+*{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 1241px;
+    /* background-color: aquamarine; */
+}
+.header{
+    width: 100%;
+    height:60px;
+    background-color: white;
+    display: flex;
+    border-bottom: 0.5px solid rgb(202, 200, 200);
+}
+.logo{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+#insta{
+    height: 100px;
+    margin-top: -20px;
+    font-weight:bolder;
+    margin-left: -180px;
+    position: sticky;
+}
+.login{
+    display: flex;
+    justify-content: right;
+    margin-left: 300px;
+    position: sticky;
+
+}
+.login button{
+    height: 32px;
+    width: 70px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: sticky;
+}
+.loginbutton{
+    background-color: #3dade6;
+    color: white;
+    font-size: 15px;
+    border: 0;
+}
+.signupbutton{
+    color: #2797cf;
+    font-size: 15px;
+    border: 0;
+    background-color: white;
+}
+.loginbutton:hover{
+    background-color: #1782b8;
+}
+.signupbutton:hover{
+    color: black;
+}
+.profile{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+}
+#pfp{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid;
+    border-color: red darkorchid orange yellow;
+    margin-top: 60px;
+    margin-left: 250px;
+}
+#username{
+    font-size: 1.5em;
+    margin-left: 60px;
+    margin-top: 35px;
+}
+#username img{
+    width: 18px;
+    height: 17px;
+}
+#follow{
+    margin-left: 30px;
+    margin-bottom: 90px;
+    margin-top: 32px;
+    height: 30px;
+    width: 70px;
+    color: black;
+    background-color: rgb(247, 232, 232);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#follow:hover{
+    background-color: rgb(223, 210, 210);
+}
+#message{
+    margin-left: 5px;
+    margin-bottom: 90px;
+    margin-top: 32px;
+    height: 30px;
+    width: 70px;
+    color: black;
+    background-color: rgb(247, 232, 232);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#message:hover{
+    background-color: rgb(223, 210, 210);
+}
+#posts{
+    margin-left: -295px;
+    margin-top: 90px;
+    font-size: 1.1em;
+    font-weight:535;
+}
+#followers{
+    margin-left: 40px;
+    margin-top: 90px;
+    font-size: 1.1em;
+    font-weight:535;
+}
+#following{
+    margin-left: 40px;
+    margin-top: 90px;
+    font-size: 1.1em;
+    font-weight:535;
+}
+#bio{
+    margin-left: -375px;
+    margin-top: 140px;
+    font-size: 1.1em;
+    font-weight:535;
+}
+#thread{
+    width: 80px;
+    height: 30px;
+    border: 0;
+    border-radius: 14px;
+    margin-left: -160px;
+    margin-top: 170px;
+    font-size: 0.7em;
+    background-color: rgb(228, 222, 222);
+}
+#media{
+    margin-left: -80px;
+    margin-top: 205px;
+    color: rgb(128, 125, 125);
+}
+#detail{
+    margin-left: -140px;
+    margin-top: 227px;
+}
+/* .popup{
+    width: 80vw;
+    height: 90vh;
+    background-color: antiquewhite;
+    float: left;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    /* backdrop-filter: blur;
+    background-image: url(background\ login.jpg);
+    /* filter: blur(1px);
+    filter: drop-shadow(0 1rem 2rem black);
+    display: none;
+}
+.popup i{
+    position: absolute;
+    left: 98.5%;
+    cursor: pointer;
+} */
+.loginpopup{
+    width: 28vw;
+    height: 70vh;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 40%;
+    bottom: 10%;
+    border: 1px solid rgb(117, 115, 115);
+    filter: drop-shadow(0 3rem 20rem rgb(0, 0, 0));
+    /* box-shadow: 0 3rem 5rem black; */
+    /* z-index: 100; */
+}
+.popup{
+    display: none;
+}
+#shut{
+    position: absolute;
+    left: 95.5%;
+    cursor: pointer;
+}
+.loginpopup img{
+    width: 25vw;
+    height: 25vh;
+}
+.username{
+    width: 20vw;
+    height: 4vh;
+    position: absolute;
+    top: 35%;
+}
+.password{
+    width: 20vw;
+    height: 4vh;
+    position: absolute;
+    top: 43%;
+}
+.loginpopup button{
+    border: none;
+    width: 20.5vw;
+    height: 4vh;
+    position: absolute;
+    top: 53%;
+    background-color: #3dade6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hr{
+    width: 25vw;
+    height: 0.1vh;
+    background-color: grey;
+    position: absolute;
+    top: 65%;
+    display: flex;
+}
+.or{
+    width: 4vw;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: rgb(110, 109, 109);
+    position: absolute;
+    left: 41%;
+    margin-top: -15px;
+}
+.other{
+    width: 20vw;
+    height: 20vh;
+    /* background-color: #3dade6; */
+    position: absolute;
+    top: 65%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.other h3{
+    color: rgba(40, 40, 167, 0.849);
+    font-size: 15px;
+    cursor: pointer;
+}
+.other p{
+    font-size: 13px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.other i{
+    color: rgba(40, 40, 167, 0.849);
+}
+.highlights{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.contest{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 220px;
+    margin-top: 30px;
+    border: 2px solid rgb(192, 187, 187);
+    cursor: pointer;
+}
+.contest p{
+    margin-left: 16px;
+    margin-top: 5px;
+}
+.contest img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-top: 2.4px;
+    margin-left: 2.4px;
+}
+.polls{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid rgb(192, 187, 187);
+    cursor: pointer;
+}
+.polls p{
+    margin-left: 23px;
+    margin-top: 5px;
+}
+.polls img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-top: 2.4px;
+    margin-left: 2.4px;
+}
+.qna{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid rgb(192, 187, 187);
+    cursor: pointer;
+}
+.qna p{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.qna img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-top: 2.4px;
+    margin-left: 2.4px;
+}
+.content{
+    width: 100%;
+    height:700px;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.head i{
+    margin: 3px;
+}
+#post{
+    margin-left: 390px;
+}
+#reel{
+    margin-left: 160px;
+}
+#tag{
+    margin-left: 180px;
+}
+.posts{
+    width:70%;
+    height:700px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin-left: 200px;
+    border-top: 1px solid rgb(119, 116, 116);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.box{
+    width: 300px;
+    height: 230px;
+    margin: 1px;
+}
+.post1{
+    margin-top: 3px;
+    background-color: #3dade6;
+    background-image: url(football.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.post2{
+    margin-top: 3px;
+    background-color: rgb(134, 55, 212);
+    background-image: url(cricket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post3{
+    margin-top: 3px;
+    background-color: #3de683;
+    background-image: url(javelinthrow.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post4{
+    margin-top: 3px;
+    background-color: #5fe63d;
+    background-image: url(footbalpic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post5{
+    margin-top: 3px;
+    background-color: rgb(112, 223, 139);
+    background-image: url(sportpic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post6{
+    margin-top: 3px;
+    background-color: #e6b03d;
+    background-image: url(volleyteam.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.post7{
+    margin-top: 3px;
+    background-color: #e63dae;
+    background-image: url(cricketpic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post8{
+    margin-top: 3px;
+    background-color: #e63d4b;
+    background-image: url(basketball.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.post9{
+    margin-top: 3px;
+    background-color: rgb(13, 23, 27);
+    background-image: url(volleyball.jpeg);
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 1000px;
+    background-color: #0e264b;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #0e264b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #F0F3FA;
+}
+.body{
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(sportbackground.jpg);
+    background-size: cover;
+    border-top-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.body h1{
+    color: white;
+    margin-top: 100px;
+}
+.skills{
+    width: 100%;
+    height: 1500px;
+    background-color: #0e264b;
+}
+.speed{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+}
+.speed h1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.speed p{
+    font-size: 1.7em;
+    margin-top: 80px;
+    margin-left: -120px;
+}
+.speed img{
+    width: 400px;
+    height: 280px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 10%;
+}
+.strength{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+}
+.strength h1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.strength p{
+    font-size: 1.7em;
+    margin-top: 80px;
+    margin-left: -200px;
+}
+.strength img{
+    width: 400px;
+    height: 280px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 10%;
+}
+
+.endurance{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+}
+.endurance h1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.endurance p{
+    font-size: 1.7em;
+    margin-top: 80px;
+    margin-left: -227px;
+}
+.endurance img{
+    width: 400px;
+    height: 280px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 10%;
+}
+
+.flexibility{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+}
+.flexibility h1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.flexibility p{
+    font-size: 1.7em;
+    margin-top: 80px;
+    margin-left: -227px;
+}
+.flexibility img{
+    width: 400px;
+    height: 280px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 10%;
+}
+
+.balance{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    color: white;
+}
+.balance h1{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.balance p{
+    font-size: 1.7em;
+    margin-top: 80px;
+    margin-left: -180px;
+}
+.balance img{
+    width: 400px;
+    height: 280px;
+    float: right;
+    margin-right: 80px;
+    border-radius: 10%;
+}
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+    color: white;
+}
+.brand{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.list ul{
+    margin-left: 220px;
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+.list ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+}
+.copyright{
+    width: 80%;
+    height:70px;
+    display: grid;
+    border-top: 1px solid white;
+    margin-left: 120px;
+}
+.copyright p{
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.copyright ul{
+    margin-left: 700px;
+    margin-top: -40px;
+    font-size: 1em;
+}
+.copyright ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    font-size: 1.2em;
+}
